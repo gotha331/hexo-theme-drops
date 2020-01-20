@@ -1,16 +1,31 @@
 <section class="posts">
-	<% page.posts.each(function (post) { %>
+	<% page.posts.each(function(post){ %>
 	<article class="post">
 		<div class="post-title">
-			<a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+			<a class="post-title-link" href="<%- url_for(post.path) %>">
+				<%= post.title %>
+			</a>
+		</div>
+		<div class="post-meta">
+			<div class="post-time">
+				<i class="iconfont icon-shijian1"></i>
+				<span><%- date(post.date, "YYYY-MM-DD") %></span>
+			</div>
+			<div class="post-info">
+				<span class="iconfont icon-leibieguanli_icox">&nbsp;code</span>
+				<span class="iconfont icon-biaoqian">&nbsp;Javascript</span>
+				<span class="iconfont icon-Group-">&nbsp;分享</span>
+				<span class="iconfont icon-chakan">&nbsp;999</span>
+				<span class="iconfont icon-pinglun">&nbsp;666</span>
+			</div>
 		</div>
 		<div class="post-content">
 			<%- post.excerpt %>
-		</div>
-		<div class="post-meta">
-			<span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
 		</div>
 	</article>
 	<% }) %>
 </section>
 <%- partial('_partial/paginator') %>
+<div class="footer">
+	<%- partial('_partial/copyright') %>
+</div>

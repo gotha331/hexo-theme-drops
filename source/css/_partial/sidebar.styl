@@ -1,34 +1,59 @@
 .sidebar {
-  width: 200px;
+  width: 32%;
   height: 100vh;
-  // margin-top: 2em
-  display: flex
-  align-items: baseline
-  justify-content: space-between
-  background: #999;
+  // display: flex;
+  // align-items: baseline;
+  // justify-content: space-between;
+  background: url('./images/drops.jpg') 100% 100% no-repeat;
 
-  .blog-title .logo {
-    color: #AAA;
-    font-size: 2em;
-    font-family: "Comic Sans MS",cursive,LiSu,sans-serif;
-    text-decoration: none;
-  }
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECF0F1;
 
-  .menu {
-    margin: 0;
-    padding: 0;
-
-    .menu-item {
-      display: inline-block;
-      margin-right: 10px;
+    .blog-avatar img {
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      margin: 20px;
     }
 
-    .menu-item-link {
-      color: #AAA;
-      text-decoration: none;
+    .blog-title {
+      .title {
+        color: #AAA;
+        font-size: 2em;
+        font-family: 'Comic Sans MS', cursive, LiSu, sans-serif;
+        text-decoration: none;
+      }
 
-      &:hover {
-        color: #368CCB;
+      .sub-title {
+        display: block;
+        color: #999;
+        font-size: 1em;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navbar {
+    .menu {
+      margin: 0;
+      padding: 10px 16px;
+      text-align: center;
+
+      .menu-item {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .menu-item-link {
+        color: #AAA;
+        font-size: 0.86em;
+        text-decoration: none;
+
+        &:hover {
+          color: #368CCB;
+        }
       }
     }
   }

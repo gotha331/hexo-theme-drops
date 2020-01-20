@@ -1,7 +1,9 @@
 Menu:
   Home: 首页
   Archives: 归档
-  Github: 交友
+  Category: 分类
+  Tag: 标签
+  Github: 友链
 
 Paginator:
   Prev: 上一页

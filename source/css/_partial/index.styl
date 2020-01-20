@@ -1,6 +1,60 @@
-.posts {
 
+body {
+  background: url('./images/cover.jpg') 100% 100% no-repeat;
+}
+
+.posts {
   max-width: 800px;
-  // border 1px solid #000;
   margin: 0 auto;
+
+  .post {
+    margin: 1em auto;
+    padding: 30px 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 0 2px #ddd;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .post-title {
+      font-size: 1em;
+
+      .post-title-link {
+        color: #368CCB;
+        text-decoration: none;
+      }
+    }
+
+    .post-meta {
+      color: #BABABA;
+      font-size: 0.8em;
+
+      .post-time {
+        font-size: 0.8em;
+        margin-bottom: 16px;
+
+        .icon-shijian1 {
+          font-size: 1.2em;
+          margin-right: 4px;
+        }
+      }
+
+      .post-info {
+        span {
+          font-size: 0.84em;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .post-content {
+      a {
+        color: #368CCB;
+        text-decoration: none;
+      }
+    }
+  }
 }
