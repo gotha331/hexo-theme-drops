@@ -3,9 +3,14 @@
 		<h2 class="title"><%= page.title %></h2>
 	</div>
 	<div class="post-meta">
-		<span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
+		<span class="post-time iconfont icon-shijian1">&nbsp;<%- date(page.date, "YYYY-MM-DD") %></span>
+		<span class="iconfont icon-leibieguanli_icox">&nbsp;code</span>
+		<span class="iconfont icon-biaoqian">&nbsp;Javascript</span>
 	</div>
 	<div class="post-content">
 		<%- page.content %>
 	</div>
 </article>
+<div class="footer">
+	<%- partial('_partial/copyright') %>
+</div>
